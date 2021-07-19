@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tranquil</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+	<link rel="icon" href="img/favicon.ico"/>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><a href="">Tranquil</a></div>
+        <div class="menu-item"><a href="#features">features</a></div>
+        <div class="menu-item"><a href="#listen">Listen</a></div>
+        <div class="menu-item"><a href="#buy">buy</a></div>
+        <div class="menu-item"><a href="#faq">faq</a></div>
+        <div class="menu-item"><a href="#about">about</a></div>
+    </div>
+
+	<section class="hero-section">
+		<div class="hero-text">
+			<h3>A State Of The Art Reverb Plugin At Your Fingertips.</h3>
+			<h1>Tranquil</h1>
+		</div>
+		<div class="hero-button">
+			<button class="hollow" onclick="location.href='#listen'">Try</button>
+			<button class="solid" onclick="location.href='#buy'">Buy $39+</button>
+		</div>
+		<img src="img/herobg.jpg" class="hero-bg">
+		<img src="img/herofg.png" class="hero-fg">
+	</section>
+
+	<section class="feature-section">
+		<div id="features"></div>
+		<div class="feature-text">
+			
+			<h1>Features</h1> 
+			<h3 class="explore">EXPLORE</h2>
+
+			<img src="img/features.jpg" class="feature-img">
+
+
+			<div class="reverb-area"></div>
+			<div class="doppler-area"></div>
+			<div class="submerge-area1"></div>
+			<div class="submerge-area2"></div>
+
+			<div class="feature feature-reverb">
+				<h2>Reverberation Engine</h2>
+				<h3>Tranquil has a meticulously-crafted Reverb Engine, designed to have accurate responses across the entire gamut of room sizes. It is now very easy to dial-in drum-ambiences or to create dreamy and lush soundscapes for your mixes.</h3>
+			</div>
+			<div class="feature feature-doppler">
+				<h2>Doppler Unit</h2>
+				<h3>Tranquil is equipped with a powerful Doppler Effect simulation unit, which can be used to create not only crystalline, glittery reverb tails but also anharmonic Zen sounds.</h3>
+			</div>
+			<div class="feature feature-submerge">
+				<h2>Submerge and Sheen</h2>
+				<h3>The Submerge knob does exactly what it says, it makes the reverb tails sound as if they're submerged in the depths of the ocean. It's more than just an EQ. The Sheen knob makes the reverb tails brighter and cleaner.</h3>
+			</div>
+
+			<div class="reverb1"></div>
+			<div class="reverb2"></div>
+			<div class="reverb3"></div>
+			<div class="reverb4"></div>
+			<div class="reverb5"></div>
+			<div class="doppler1"></div>
+			<div class="doppler2"></div>
+			<div class="submerge1"></div>
+			<div class="submerge2"></div>
+			<div class="submerge3"></div>
+			<div class="submerge4"></div>
+
+			<div class="info-reverb">Independent dry/wet levels for maximum control. Morph the reverb tails in stereo-space with L/R Predelay.</div>
+			<div class="info-doppler">Control the Doppler pitch-shift using the Multiplier. Degrade captures the imperfections of the Doppler algorithm, messing with the harmonics.</div>
+			<div class="info-submerge">Control the decay characteristics of Submerge and Sheen, with independent blend controls.</div>
+
+		</div>  
+		<div class="spacer"></div>
+	</section>
+
+	<section class="demo-section">
+		<div id="listen"></div>
+		<h1>Listen</h1> 
+		<h3 class="subtitle">It's a great idea to listen to a plugin perform before buying it. So, here's a set of audio snippets that demonstrate Tranquil's signal processing.
+			<br><br>
+			The audio snippets will play the dry audio first and then the wet version.
+		</h3>
+
+		<!-- REMEMBER TO LINK GITHUB REPO HERE -->
+		<button class="hollow trial" onclick="location.href='https://google.co.in'">Get Trial version &nbsp;
+			<img src="img/ext.png" width="10px">
+		</button>
+
+		<div class="tile-container">
+			<div class="tile">
+					<div class="demo">
+							<h2>Vocals</h2>
+							<audio id="audioplayer1" controls src="audio/voxdemo.mp3">
+								Your browser does not support the <code>audio</code> element.
+							</audio>
+							<h3 class="desc">From lush and airy to highly localized vocals in 3D. Perfect for harmonies.</h3>
+					</div>
+					<div class="demo">
+						<h2>Keys</h2>
+						<audio id="audioplayer2" controls src="audio/keysdemo.mp3">
+							Your browser does not support the <code>audio</code> element.
+						</audio>
+						<h3 class="desc">Set the perfect mood for a melancholic piece.</h3>
+					</div>
+					<div class="demo">
+						<h2>Guitar</h2>
+						<audio id="audioplayer3" controls src="audio/guitardemo.mp3">
+							Your browser does not support the <code>audio</code> element.
+						</audio>
+						<h3 class="desc">Embellish your solos with chained instances of Tranquil.</h3>
+					</div>
+			</div>
+			<div class="tile">
+					<div class="demo-col">
+						<h2>Drums</h2>
+						<audio id="audioplayer4" controls src="audio/drumsdemo.mp3">
+							Your browser does not support the <code>audio</code> element.
+						</audio>
+						<h3 class="desc">Add subtle ambiences to your drums. Or go crazy with the multiplier and degrade.</h3>
+					</div>
+					<div class="demo-col">
+						<h2>Strings</h2>
+						<audio id="audioplayer5" controls src="audio/stringsdemo.mp3">
+							Your browser does not support the <code>audio</code> element.
+						</audio>
+						<h3 class="desc">Breathe life into strings.</h3>
+					</div>
+					<div class="demo-col">
+					<h2>Experimental</h2>
+					<audio id="audioplayer6" controls src="audio/keys.mp3">
+						Your browser does not support the <code>audio</code> element.
+					</audio>
+					<h3 class="desc">Create spine-chilling soundscapes.</h3>
+					</div>
+			</div>
+		</div>
+		<div class="spacer"></div>
+	</section>
+
+	<section class="buy-section">
+		<div id="buy"></div>
+		<h1>Buy</h1>
+		<img src="img/buy.jpg" class="buy-img">
+
+		<button class="buy-button soliddark" id="buy-button">Buy Now  &nbsp; $39+</button>
+		<img src="img/paypal.png" class="paypal">
+
+		<div class="tile-container">
+			<div class="tile">
+				<h2 class="subtitle1">Trial Limitations</h2>
+				<h3>The trial version of Tranquil (available on GitHub) is identical to the Licensed version functionally.
+					<br><br>
+					The only limitation is that the trial version will add gentle noise to the output audio periodically.
+				</h3>
+			</div>
+			<div class="tile">
+				<h2 class="subtitle2">When You Buy</h2>
+				<h3>Tranquil comes in a 64-bit VST3 format for both Windows/Mac.
+					<br><br>
+					An extensive collection of Tranquil presets for your own DAW.
+					<br><br>
+					A unique license key that activates your trial version of Tranquil.*
+				</h3>
+			</div>
+		</div>
+		
+		<div class="info">
+			<h4>*The license key will be sent to you on your email address, upon purchase.</h4>
+		</div>
+		<div class="spacer"></div>
+	</section>
+
+	<section class="faq-section">
+		<div id="faq"></div>
+		<h1>FAQ</h1> 
+		<h3 class="subtitle"> Answering all your questions!</h3>
+
+		<div class="tile-container">
+			<div class="tile">
+				<h2>License</h2>
+
+				<div class="pair"> 
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">I don't have a PayPal account, can I still buy Tranquil?</h2>
+					<h3 class="">Absolutely! there's no need for PayPal as such. One can use any payment method of choice, available with PayPal's payment gateway system.</h3>
+				</div>
+				<div class="pair"> 
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">I completed the payment, how do I get my license key?</h2>
+					<h3 class="">Upon completion of the payment, you shall receive the license key file at your email address. For this purpose, kindly mail at:
+						<br><br> fldevashishgupta@gmail.com
+					</h3>
+				</div>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">Do I have to download a separate licensed VST after purchase?</h2>
+					<h3 class="">No, you only have to download Tranquil once, in its trial version form. Then you activate it using a license key.</h3>
+				</div>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">My license key wasn't detected, what do I do?</h2>
+					<h3 class="">Ensure you have installed Tranquil at the correct location for VST3 plugins. As per the VST3 standard and how OS's manage them, there's a fixed install directory for VST3 plugins.
+						<br><br> Also check the location where you placed the Tranquil.licensekey file. If you have mistakenly tampered the licensekey file then use the version that you received on mail.
+					</h3>
+				</div>
+
+				<h2>Installation</h2>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">How do I install Tranquil?</h2>
+					<h3 class="">Go to the <a href="#" class="in-text">GitHub page</a> where Tranquil is hosted. Download the VST3 from there and simply place it in your system's folder for VST3 plugins.
+						<br><br> for Windows, place it in C:\Program Files\Common Files\VST3. <br>
+						for MacOSx, place it in Library/Audio/Plug-ins/VST3. 
+						<br><br> For detailed instructions, go <a href="#" class="in-text">here</a>.
+					</h3>
+				</div>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">I have a license key, how do I install it?</h2>
+					<h3 class="">Once you purchase the license for Tranquil, you'll have a Tranquil.licensekey file. Put this licensekey file within Tranquil.vst3/License folder at your installation location. 
+						<br><br> The plugin will automatically get activated if the license key is at proper location and is valid/not tampered.
+					</h3>
+				</div>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">How to install presets?</h2>
+					<h3 class="">Presets for Tranquil have been made available for all major DAWs in their native formats. Upon buying, you'll get access to all the presets, download them.
+						<br><br> Assuming you have installed and activated Tranquil, load Tranquil into an FX slot. Use the DAW's native preset creation/loading functionality to open the location at which the DAW stores the presets. Simply copy and paste all the downloaded presets into that folder and you're ready to go!
+					</h3>
+				</div>
+			</div>
+
+			<div class="tile">
+				<h2>Support</h2>
+				<div class="pair"> 
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">Will Tranquil 64-bit load into a 32-bit DAW?</h2>
+					<h3 class="">DAWs do have plugin bridges that can load a 64-bit VST into a 32-bit DAW and vice-versa, for an extra memory cost. 32-bit support for Tranquil is not present at the moment. </h3>
+				</div>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">The plugin might have some possible problems/bugs, what do I do?</h2>
+					<h3 class="">Contact the developer at: fldevashishgupta@gmail.com</h3>
+				</div>
+				<div class="pair">
+					<img src="img/arrow.png" class="arrow" onclick="toggleAccordion(this)">
+					<h2 class="question" onclick="toggleAccordion(this)">How do I support the developer?</h2>
+					<h3 class="">Here's a few things that you can do!
+						<br><br> • Make a plugin review.
+						<br> • Use Tranquil to create something beautiful.
+						<br> • Share it with your producer/composer/mix-engineer friends.
+						<br> • Donations are also possible! (The price tag, $39+) 
+					</h3>
+				</div>
+			</div>
+
+		</div>
+		<div class="spacer"></div>
+	</section>
+
+	<section class="about-section">
+		<div id="about"></div>
+		<h1>About</h1> 
+		<div class="tile-container">
+			<div class="tile">
+				<img src="img/developer.jpg" class="dev-img">
+				<div class="socials">
+					<img src="img/insta.png" class="social" onclick="location.href='https://instagram.com/dev.sys'">
+					<img src="img/linkedin.png" class="social" onclick="location.href='https://www.linkedin.com/in/dev-sys/'">
+					<img src="img/yt.png" class="social" onclick="location.href='https://www.youtube.com/channel/UC0n-S0yvxuCdaUG6h079YTg'">
+				</div>
+			</div>
+			<div class="tile">
+				<h2 class="subtitle">Meet the developer</h2>
+				<h2>Devashish Gupta</h2>
+				<h3>I'm a self-taught Multi-Instrumentalist and Composer based in India. I have deep interests in Real-time Signal Processing, and also in fields like Robotics and Astronomy. 
+					Since my childhood, I have had fascination with music and math. When I was 14, I first began tinkering around in FL Studio and there was no going back. It was like a new world had opened up before me, where my creativity could find new ways of expression.
+					<br><br>
+					During my college years at BITS Pilani, as a Mechanical Engineering + Physics Undergraduate, I developed a knack for Software Development as well. Soon, I wanted to develop my own audio plugin!
+					And, <i>Tranquil was born</i>.</h3>
+					<br><br>
+				<h2>Vision For Tranquil</h2>
+				<h3> <b>Tranquil</b>  /træŋ.kwɪl/: &nbsp; calm, quiet, and peaceful. <br><br>
+					My vision behind creating Tranquil, was to create something that is capable of instantly teleporting the musician to somewhere serene, something to open up new creative possibilities with one's music. I realized, a Reverb algorithm when designed well, wields this power.
+					My goal was to design the perfect architecture for Tranquil, that was adept for building prolific ambient soundscapes and simulating small rooms with the same fidelity. 
+					<br><br>
+					I am a huge connoisseur of Minimalism, in Art, Music and Life. I designed Tranquil's GUI with the same idea in mind, and hopefully it puts forth a cohesive and immersive user experience.  
+				</h3>
+			</div>
+
+		</div>
+
+		<div class="spacer"></div>
+	</section>
+
+	<section class="final-section">
+		<div id="final"></div>
+		<div class="tile-container">
+			<div class="tile">
+				<h2>Tranquil</h2> 
+				<h3 class="subtitle">Copyright, Devashish Gupta © 2021</h3>
+			</div>
+			<div class="tile">
+				<button class="hollow" onclick="location.href=''">Download</button>
+				<button class="solid" onclick="location.href='#buy-button'">Buy</button>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
