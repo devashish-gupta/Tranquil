@@ -41,7 +41,7 @@ Once you get the license for Tranquil and activate the trial version, follow the
 6.  You're good to go!
 
 ### *Got Questions?*
-Do check out the **[FAQ Section](https://devashish-gupta.github.io/Tranquil/)** on the Tranquil's homepage. Still got questions? Post it on the discussions tab for this repository.
+Do check out the **[FAQ Section](https://devashish-gupta.github.io/Tranquil/)** on the Tranquil's homepage. Still got questions? Post it on the discussions tab for this repository. I'll be happy to answer them :)
 
 
 
