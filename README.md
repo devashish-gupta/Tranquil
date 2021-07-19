@@ -2,7 +2,7 @@
 Tranquil is a breathtaking Algorithmic Reverb Plugin for all the major digital audio workstations (DAWs), meticulously crafted with an architecture that is adept in building prolific soundscapes and simulating small rooms with the same fidelity. Available as a 64-bit VST3 binary for Windows and MacOSX.
 <br>
 
-!["bg"](/assets/bg.png)
+!["bg"](/assets/bg.png){margin-top: 50px}
 
 ### *Installation*:
 Tranquil is a 64-bit VST3 plugin. Thus, it needs to be in a specific location within the system (Windows or Mac) to be detected by your DAW unlike a VST2 plugins which can be detected from any sensible location within the system. Follow the steps written below for a successful installation.
