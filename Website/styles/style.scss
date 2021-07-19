@@ -1,0 +1,1538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+$black: rgb(49, 49, 49);
+$dark-black: rgb(28,28,28);
+$dark-grey: rgb(134, 134, 134);
+$light-grey: rgb(219, 219, 219);
+$white: rgb(255,255,255);
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  line-height: 1.3;
+  color: $black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 400;
+  @media (min-width: 800px) {
+    font-size: 1.1vw;
+    width: 15vw;
+  }
+  font-size: 2.1vw;
+  margin-left: 0.5vw;
+  width: 28vw;
+} 
+
+a.in-text {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.spacer {
+  position: relative;
+  display: block;
+  width: 100vw;
+ // border: 2px blue solid;
+  background-color: transparent;
+  height: 10vw; //4vw
+
+  @media (max-width: 800px) {
+    height: 14vw;
+  }
+}
+
+// Header
+.header {
+  display: flex;
+  width: 100vw;
+  padding: 0.8rem; 
+  margin: 0rem;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  position: sticky;
+  box-sizing: border-box;
+
+  @media (min-width: 800px) {
+    padding: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: auto;
+    cursor: default;
+
+    @media (min-width: 800px) {
+      font-size: 1.1rem;
+      width: 20vw;
+    }
+  }
+
+  .menu-item
+  {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 75ms ease-in-out;
+    padding-right: 2rem;
+    display: none;
+
+    @media (min-width: 800px) {
+      display: block;
+    }
+  }
+  .menu-item a:hover
+  {
+    color: $dark-grey;
+  }
+  .menu-item:nth-of-type(5)
+  {
+    padding-right: 2rem;
+  }
+}
+
+
+.hero-section {
+  width: 100vw;
+  @media (min-width: 800px) {
+    height: 45vw;
+    position: relative;
+    overflow: hidden;
+  }
+  height: 80vw;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    @media (min-width: 800px) {
+      width: 100vw; 
+      position: absolute;
+      left: 0vw;
+    }
+    top: 0px;
+    width: 190vw; //145
+    left: -15vw;
+    margin-top: -5vw;
+    image-rendering: crisp-edges;
+  }
+
+  @media (max-width: 800px) {
+    img.hero-fg {
+      position: absolute;
+      top: 0px;
+      z-index: 1;
+    }
+  }
+
+  img.hero-bg {
+    @media (min-width: 800px) {
+      position: absolute;
+    }
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .hero-text{
+    padding: 4.5vw;
+    position: absolute;
+    @media (min-width: 800px) {
+      top: 15vw;
+    }
+    top: 22vw;
+    z-index: 2;
+    
+    h1 {
+      @media (min-width: 800px) {
+        font-size: 10vw;
+        margin-top: -1vw;
+      }
+      font-size: 15vw;
+      margin-top: -2vw;
+      font-weight: 600;
+    }
+    
+    h3 {
+      font-weight: 300;
+      @media (min-width: 800px) {
+        font-size: 1.1vw;
+        width: 15vw;
+      }
+      font-size: 2.7vw;
+      margin-left: 0.5vw;
+      width: 33vw;
+    }
+  }
+
+  .hero-button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    @media (min-width: 800px) {
+      top: 35vw;
+    }
+    top: 60vw;
+    left: 3vw;
+    z-index: 3;
+    //height: 6.5vw;
+  }
+}
+
+button {
+  padding: 2vw;
+  border: none;
+  background-color: $white;
+  font-family: 'Poppins', sans-serif;
+  @media (min-width: 800px) {
+    width: 7vw;
+    font-size: 0.75rem;
+    padding: 0.4vw;
+    margin-right: 2vw;
+  }
+  width: 28.8vw;
+  margin-right: 4vw;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: $black;
+}
+
+button.hollow {
+  background-color: rgba($color: $white, $alpha: 0.0);
+  border: 0.1rem solid $white;
+  transition: background-color 200ms ease-in-out;
+  color: $white;
+}
+
+button.hollow:hover {
+  background-color: rgba($color: $white, $alpha: 0.1);
+  cursor: pointer;
+}
+
+button.solid {
+  transition: background-color 200ms ease-in-out;
+}
+
+button.solid:hover {
+  background-color: $light-grey;
+  cursor: pointer;
+}
+
+button.soliddark {
+  background-color: $black;
+  color: $white;
+  transition: background-color 200ms ease-in-out;
+}
+
+button.soliddark:hover {
+  background-color: $dark-black;
+  cursor: pointer;
+}
+
+.feature-section {
+  width: 100vw;
+  background-color: $white;
+  color: $black;
+  z-index: 3;
+  overflow: hidden;
+
+  @media (min-width: 800px) {
+    position: relative;
+    //  padding-bottom: 16vw;
+    margin-bottom: 16vw;
+  }
+  // top: 0vw;
+  position: relative;
+  height: inherit;
+
+  // For scrolling
+  #features {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -15vw;
+    left: 0;
+  }
+
+  h1 {
+    position: relative;
+    @media (min-width: 800px) {
+      font-size: 3.5vw;
+      left: 80vw;
+      margin-top: 2.5vw;
+    }
+    font-size: 7vw;
+    left: 60vw;
+    width: 20vw;
+    margin-top: 8vw;
+    opacity: 0.8;
+  }
+
+  .explore {
+    font-weight: 700;
+    position: relative;
+    font-size: 3vw;
+    @media (min-width: 800px) {
+      left: 5.5vw;
+      top: -4vw;
+      font-size: 1.1vw;
+    }
+    left: 7.1vw;
+    top: -4vw;
+  }
+
+  .feature-img {
+    //display: block;
+    position: relative;
+    -webkit-user-drag: none;
+    top: -2rem;
+
+    @media (min-width: 800px) {
+      width: 63vw;
+      top: 2.5vw;
+      left: -1.5vw;
+      padding: 7.5vw;
+      position: absolute;
+    }
+    width: 100vw;
+    padding: 7.5vw;
+    padding-top: -5vw;
+  }
+
+  .feature {
+    position: relative;
+    display: block;
+    transition: all 150ms ease-in-out;
+
+    @media (min-width: 800px) {
+      left: 60vw;
+      top: -2.5vw;
+      padding-bottom: 0vw;
+      position: relative;
+    }
+
+    left: 7vw;
+    top: 0rem;
+    padding-bottom: 2vw;
+
+    h2 {
+      font-size: 1.25rem;
+      transition: all 150ms ease-in-out;
+    }
+
+    h3 {
+      margin: 0;
+      width: 85vw;
+      font-size: 3vw;
+      @media (min-width: 800px) {
+        width: 37vw;
+        font-size: 1.1vw;
+      }
+    }
+  }
+
+  .reverb1, .reverb2, .reverb3, .reverb4, .reverb5, .doppler1, .doppler2, .submerge1, .submerge2, .submerge3, .submerge4 {
+    position: absolute;
+    height: 3.1vw;
+    width: 3.1vw;
+    border-radius: 100%;
+    border: 2px rgba($white, 0.2) solid;
+    background-color: transparent;
+    z-index: 4;
+    transform-origin: center;
+    transition: all 120ms ease-in-out;
+
+    @media (max-width: 800px) {
+      height: 5.5vw;
+      width: 5.5vw;
+    }
+  }
+
+  .reverb1 {
+    top: 17.5vw;
+    left: 25.4vw;
+
+    @media (max-width: 800px) {
+      top: 42.5vw;
+      left: 41.8vw;
+    }
+  }
+
+  .reverb2 {
+    top: 17.5vw;
+    left: 31.55vw;
+
+    @media (max-width: 800px) {
+      top: 42.5vw;
+      left: 52.6vw;
+    }
+  }
+
+  .reverb3 {
+    top: 22.85vw;
+    left: 22.3vw;
+    @media (max-width: 800px) {
+      top: 52vw;
+      left: 36.3vw;
+    }
+  }
+
+  .reverb4 {
+    top: 21.95vw;
+    left: 27.6vw;
+    height: 4.8vw;
+    width: 4.8vw;
+
+    @media (max-width: 800px) {
+      top: 50.6vw;
+      left: 45.7vw;
+      height: 8.5vw;
+      width: 8.5vw;
+    }
+  }
+
+  .reverb5 {
+    top: 22.85vw;
+    left: 34.65vw;
+
+    @media (max-width: 800px) {
+      top: 52vw;
+      left: 58.2vw;
+    }
+  }
+  
+  .doppler1 {
+    top: 28.15vw;
+    left: 25.4vw;
+
+    @media (max-width: 800px) {
+      top: 61.5vw;
+      left: 41.8vw;
+    }
+  }
+
+  .doppler2 {
+    top: 28.15vw;
+    left: 31.55vw;
+
+    @media (max-width: 800px) {
+      top: 61.5vw;
+      left: 52.6vw;
+    }
+  }
+
+  .submerge1 {
+    top: 22.85vw;
+    left: 11.75vw;
+
+    @media (max-width: 800px) {
+      top: 52vw;
+      left: 17.6vw;
+    }
+  }
+
+  .submerge2 {
+    top: 22.85vw;
+    left: 17.05vw;
+
+    @media (max-width: 800px) {
+      top: 52vw;
+      left: 27.1vw;
+    }
+  }
+
+  .submerge3 {
+    top: 22.85vw;
+    left: 39.95vw;
+
+    @media (max-width: 800px) {
+      top: 52vw;
+      left: 67.5vw;
+    }
+  }
+
+  .submerge4 {
+    top: 22.85vw;
+    left: 45.25vw;
+
+    @media (max-width: 800px) {
+      top: 52vw;
+      left: 76.9vw;
+    }
+  }
+
+  .feature-reverb:hover ~ .reverb1, 
+  .feature-reverb:hover ~ .reverb2,
+  .feature-reverb:hover ~ .reverb3,
+  .feature-reverb:hover ~ .reverb4,
+  .feature-reverb:hover ~ .reverb5 {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  .feature-doppler:hover ~ .doppler1, .feature-doppler:hover ~ .doppler2  {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  .feature-submerge:hover ~ .submerge1, .feature-submerge:hover ~ .submerge2,
+  .feature-submerge:hover ~ .submerge3, .feature-submerge:hover ~ .submerge4 
+  {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  // Reverb area
+  .reverb-area{
+    position: absolute;
+    width: 16vw;
+    height: 10vw;
+    background-color: transparent;
+    top: 17.2vw;
+    left: 22vw;
+    z-index: 5;
+
+    @media (max-width: 800px) {
+      width: 28vw;
+      height: 17vw;
+      top: 42.2vw;
+      left: 36vw;
+    }
+  }
+
+  .reverb-area:hover ~ .reverb1, 
+  .reverb-area:hover ~ .reverb2, 
+  .reverb-area:hover ~ .reverb3, 
+  .reverb-area:hover ~ .reverb4, 
+  .reverb-area:hover ~ .reverb5 {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  .reverb-area:hover ~ .feature-reverb {
+    opacity: 0.8;
+    transform: translateX(-0.5vw);
+  }
+
+  .reverb-area:hover ~ .info-reverb {
+    opacity: 0.7;
+  }
+
+  // Doppler Area
+
+  .doppler-area{
+    position: absolute;
+    width: 10vw;
+    height: 3.5vw;
+    background-color: transparent;
+    top: 27.9vw;
+    left: 25vw;
+    z-index: 5;
+
+    @media (max-width: 800px) {
+      width: 18vw;
+      height: 8vw;
+      top: 60.5vw;
+      left: 41vw;
+    }
+  }
+
+  .doppler-area:hover ~ .doppler1, 
+  .doppler-area:hover ~ .doppler2 {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  .doppler-area:hover ~ .feature-doppler {
+    opacity: 0.8;
+    transform: translateX(-0.5vw);
+  }
+
+  .doppler-area:hover ~ .info-doppler {
+    opacity: 0.7;
+  }
+
+  // Submerge Area
+  .submerge-area1 {
+    position: absolute;
+    width: 8.5vw;
+    height: 3.5vw;
+    background-color: transparent;
+    top: 22.75vw;
+    left: 11.75vw;
+    z-index: 5;
+
+    @media (max-width: 800px) {
+      width: 18vw;
+      height: 8vw;
+      top: 50.5vw;
+      left: 16vw;
+    }
+  }
+
+  .submerge-area1:hover ~ .submerge1, 
+  .submerge-area1:hover ~ .submerge2,
+  .submerge-area1:hover ~ .submerge3,
+  .submerge-area1:hover ~ .submerge4 {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  .submerge-area1:hover ~ .feature-submerge {
+    opacity: 0.8;
+    transform: translateX(-0.5vw);
+  }
+
+  .submerge-area1:hover ~ .info-submerge {
+    opacity: 0.7;
+  }
+
+  .submerge-area2 {
+    position: absolute;
+    width: 8.5vw;
+    height: 3.5vw;
+    background-color: transparent;
+    top: 22.75vw;
+    left: 39.9vw;
+    z-index: 5;
+
+    @media (max-width: 800px) {
+      width: 18vw;
+      height: 8vw;
+      top: 50.5vw;
+      left: 66vw;
+    }
+  }
+
+  .submerge-area2:hover ~ .submerge1, 
+  .submerge-area2:hover ~ .submerge2,
+  .submerge-area2:hover ~ .submerge3,
+  .submerge-area2:hover ~ .submerge4 {
+    border: 2px rgba($white, 0.95) solid;
+    transform: scale(1.2);
+  }
+
+  .submerge-area2:hover ~ .feature-submerge {
+    opacity: 0.8;
+    transform: translateX(-0.5vw);
+  }
+
+  .submerge-area2:hover ~ .info-submerge {
+    opacity: 0.7;
+  }
+
+
+  // Feature text hover transform
+  .feature-reverb:hover,
+  .feature-doppler:hover,
+  .feature-submerge:hover {
+    opacity: 0.8;
+    transform: translateX(-0.5vw);
+  }
+
+  // Tooltips
+  .info-reverb, .info-doppler, .info-submerge {
+    position: absolute;
+    top: 40vw;
+    left: 6vw;
+    width: 45vw;
+    opacity: 0.0;
+    transition: all 200ms ease-in-out;
+    font-size: 1.1vw;
+
+    @media (max-width: 800px) {
+      position: absolute;
+      top: 82vw;
+      left: 7vw;
+      width: 85vw;
+      font-size: 3vw;
+    }
+  }
+
+  .feature-reverb:hover ~ .info-reverb,
+  .feature-doppler:hover ~ .info-doppler,
+  .feature-submerge:hover ~ .info-submerge
+  {
+    opacity: 0.7;
+  }
+
+}
+
+.demo-section {
+  display: block;
+  width: 100vw;
+  background-color: $dark-black;
+  color: $white;
+  z-index: 3;
+  overflow: hidden;
+
+   // For scrolling
+   #listen {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -32vw;
+    left: 0;
+  }
+
+  @media (min-width: 800px) {
+    position: relative;
+    margin-bottom: 16vw;
+  }
+  position: relative;
+
+  h1 {
+    position: relative;
+    @media (min-width: 800px) {
+      font-size: 3.5vw;
+      left: 3vw;
+      padding-top: 1vw;
+    }
+    padding-top: 4vw;
+    font-size: 7vw;
+    left: 7vw;
+  }
+
+  .subtitle {
+    position: relative;
+    margin-left: 7.2vw;
+    width: 80vw;
+    font-size: 3vw;
+    font-weight: 300;
+
+    @media (min-width: 800px) {
+      position: absolute;
+      width: 25vw;
+      top: 9vw;
+      font-size: 1.1vw;
+      margin-left: 3vw;
+    }
+  }
+
+  .trial {
+
+    @media (min-width:800px) {
+      position: absolute;
+      left: 15vw;
+      top: 23vw;
+      font-size: 0.75rem;
+      width: 12.5vw;
+      padding: 0.8vw;
+      margin-right: 2vw;
+      margin-top: 0vw;
+    }
+    position: relative;
+    margin-top: 3.5vw;
+    left: 7.2vw;
+    width: 85vw;
+    padding: 4vw;
+
+  }
+
+  .tile {
+    float: left;
+    width: 31vw;
+  }
+
+  .tile-container {
+    box-sizing: border-box;
+    position: relative;
+    left: 36vw;
+    top: -5.3vw;
+    padding: 0vw;
+    margin: 0;
+  }
+
+  .tile-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tile {
+       width: 100%;
+    }
+
+    .tile-container {
+      position: relative;
+      left: 7.2vw;
+      top: 3vw;
+    }
+ }
+
+  .demo {
+    position: relative;
+    margin: 0;
+    transition: all 150ms ease-in-out;
+    padding-bottom: 10vw;
+
+    audio::-webkit-media-controls-enclosure {
+      border-radius: 0px;
+    }
+
+    audio {
+      width: 85vw;
+      @media (min-width: 800px) {
+        width: 23vw;
+      }
+    }
+
+    audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+
+    @media (min-width: 800px) {
+      //position: relative;
+      padding-bottom: 6.5vw;
+    }
+
+    h2 {
+      position: relative;
+      width: 20vw;
+      font-size: 1.25rem;
+      transition: all 150ms ease-in-out;
+    }
+
+    .desc {
+      margin: 0;
+      margin-top: 1.5vw;
+      width: 80vw;
+      font-size: 3vw;
+      font-weight: 300;
+
+      @media (min-width: 800px) {
+        width: 24vw;
+        font-size: 1.1vw;
+        position: absolute;
+      }
+      position: absolute;
+    }
+  }
+
+  .demo-col {
+    position: relative;
+    margin: 0;
+    transition: all 150ms ease-in-out;
+    padding-bottom: 10vw;
+
+    audio::-webkit-media-controls-enclosure {
+      border-radius: 0px;
+    }
+
+    audio {
+      width: 85vw;
+      @media (min-width: 800px) {
+        width: 23vw;
+      }
+    }
+
+    audio::-webkit-media-controls-current-time-display, audio::-webkit-media-controls-time-remaining-display {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+    }
+
+    @media (min-width: 800px) {
+      position: relative;
+      padding-bottom: 6.5vw;
+    }
+
+    h2 {
+      position: relative;
+      width: 20vw;
+      font-size: 1.25rem;
+      transition: all 150ms ease-in-out;
+    }
+
+    .desc {
+      margin: 0;
+      margin-top: 1vw;
+      width: 80vw;
+      font-size: 3vw;
+      font-weight: 300;
+
+      @media (min-width: 800px) {
+        width: 24vw;
+        font-size: 1.1vw;
+        position: absolute;
+      }
+      position: absolute;
+
+    }
+  }
+
+}
+
+.buy-section {
+  width: 100vw;
+  background-color: $white;
+  color: $black;
+  z-index: 3;
+
+  @media (min-width: 800px) {
+    position: relative;
+    padding-bottom: 5vw;
+    margin-bottom: 16vw;
+  }
+  position: relative;
+
+  #buy {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -40vw;
+  }
+
+  h1 {
+    position: relative;
+    @media (min-width: 800px) {
+      font-size: 3.5vw;
+      left: 89vw;
+      padding-top: 3.5vw;
+    }
+    font-size: 7vw;
+    left: 79vw;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    position: relative;
+  }
+
+  h3 {
+    font-size: 3vw;
+    position: relative;
+    width: 85vw;
+    margin: 0;
+    
+    @media (min-width: 800px) {
+      font-size: 1.1vw;
+      position: relative;
+      width: 20vw;
+      margin: 0;
+    }
+  }
+
+  .buy-img {
+    position: relative;
+    top: 15vw;
+    @media (min-width: 800px) {
+      position: absolute;
+      width: 63vw;
+      top: 2.5vw;
+      left: 50vw;
+    }
+    top: -4vw;
+    width: 100vw;
+    padding: 7.5vw;
+  }
+
+  .tile {
+    float: left;
+    width: 26.5vw;
+  }
+
+  .tile-container {
+    position: relative;
+    left: 3vw;
+    top: -6vw;
+    padding: 0vw;
+    margin: 0;
+  }
+
+  .tile-container:after {
+    //position: relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tile {
+      position: relative;
+      width: 85vw;
+      padding-bottom: 4vw;
+    }
+
+    .tile-container {
+      position: relative;
+      left: 7.2vw;
+      top: 5vw;
+    }
+ }
+
+
+  .subtitle1 {
+    position: relative;
+  }
+
+  .subtitle2 {
+    position: relative;
+  }
+
+  .buy-button {
+    position: relative;
+    width: 50vw;
+    left: 7.2vw;
+    top: -4vw;
+    padding: 4vw;
+    font-size: 0.9rem;
+    z-index: 5;
+
+    @media (min-width: 800px) {
+      position: relative;
+      width: 11vw;
+      padding: 1vw;
+      left: 3.1vw;
+      top: 25vw;
+      font-size: 0.75rem;
+    }
+  }
+
+
+  .paypal {
+    position: relative;
+    opacity: 0.8;
+    width: 25vw;
+    left: 10vw;
+    top: -2vw;
+
+    @media (min-width: 800px) {
+      position: relative;
+      opacity: 0.8;
+      width: 8vw;
+      left: 4rem;
+      top: 26vw;
+    }
+  }
+
+  h4 {
+  position: relative;
+  font-size: 2.7vw;
+  font-weight: 400;
+  left: 7.2vw;
+  top: 8vw;
+  width: 85vw;
+  z-index: 10;
+
+    @media (min-width: 800px) {
+      position: relative;
+      font-size: 1vw;
+      font-weight: 400;
+      left: 3vw;
+      top: 10vw;
+    }
+  }
+}
+
+.faq-section {
+  display: block;
+  width: 100vw;
+  background-color: $dark-black;
+  color: $white;
+  z-index: 10;
+
+   // For scrolling
+  #faq {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -57vw;
+    left: 0;
+  }
+
+  @media (min-width: 800px) {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 16vw;
+  }
+  position: relative;
+
+  @media (min-width: 800px) {
+    .spacer {
+      position: relative;
+      height: 2vw;
+    }
+  }
+
+  h1 {
+    position: relative;
+    @media (min-width: 800px) {
+      font-size: 3.5vw;
+      left: 3vw;
+      padding-top: 3.5vw;
+    }
+    padding-top: 8vw;
+    font-size: 7vw;
+    left: 7vw;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    position: relative;
+    margin-top: 10vw;
+    margin-bottom: 0vw;
+
+    @media (min-width: 800px)
+    {
+      font-size: 1.7rem;
+      position: relative;
+      margin-top: 4vw;
+      margin-bottom: 0vw;
+    }
+  }
+
+  h2.question {
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  h3 {
+    font-size: 3vw;
+    position: relative;
+    width: 78vw;
+    margin: 0;
+    
+    @media (min-width: 800px) {
+      font-size: 1.1vw; 
+      position: relative;
+      width: 27vw;
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+
+  .pair h3 {
+    transition: all 200ms ease-in-out;
+    margin-top: -0.8vw;
+    display: block;
+    opacity: 0;
+    max-height: 0;
+  }
+
+  .pair h3.open {
+    display: block;
+    opacity: 1;
+    color: rgb(211, 211, 211);
+    max-height: 50vw;
+    margin-top: 1vw;
+
+    a.in-text:hover {
+      opacity: 0.8;
+      color: white;
+    }
+  }
+
+  .pair {
+    padding-bottom: 0vw;
+
+    .arrow {
+      width: 2vw;
+      position: relative;
+      left: 28.5vw;
+      top: 2.3vw;
+      transition: all 200ms ease-in-out;
+      cursor: pointer;
+
+      @media (max-width: 800px) {
+        left: 80vw;
+        top: 6vw;
+        width: 5vw;
+      }
+    }
+
+    .arrow.open {
+      width: 2vw;
+      position: relative;
+      left: 28.5vw;
+      top: 2.3vw;
+      transform: rotateX(180deg);
+      cursor: pointer;
+      @media (max-width: 800px) {
+        left: 80vw;
+        top: 6vw;
+        width: 5vw;
+      }
+    }
+  }
+
+  .subtitle {
+    position: relative;
+    margin-left: 7.2vw;
+    width: 80vw;
+    font-size: 3vw;
+    font-weight: 300;
+
+    @media (min-width: 800px) {
+      position: absolute;
+      width: 25vw;
+      top: 10vw;
+      font-size: 1.1vw;
+      margin-left: 3vw;
+    }
+  }
+
+  .tile {
+    float: left;
+    width: 26vw;
+    margin-right: 10vw;
+    //border: 2px blue solid;
+  }
+
+  @media (max-width: 800px) {
+    .tile:nth-of-type(2) {
+      margin-top: -4vw;
+    }
+  }
+
+  .tile-container {
+    position: relative;
+    left: 27vw;
+    top: -10.2vw;
+    padding: 0vw;
+    margin: 0;
+  }
+
+  .tile-container:after {
+    //position: relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tile {
+      position: relative;
+      width: 78vw;
+      padding-bottom: 4vw;
+    }
+
+    .tile-container {
+      position: relative;
+      left: 7.2vw;
+      top: 0vw;
+    }
+  }
+
+
+}
+
+.about-section {
+  width: 100vw;
+  background-color: $white;
+  color: $black;
+  z-index: 11;
+
+  @media (min-width: 800px) {
+    //position: absolute;
+    //top: 233.5vw;
+    position: relative;
+  }
+  position: relative;
+
+  #buy {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -10vw;
+  }
+
+  h1 {
+    position: relative;
+    @media (min-width: 800px) {
+      font-size: 3.5vw;
+      left: 84.5vw;
+      padding-top: 3.5vw;
+    }
+    font-size: 7vw;
+    left: 72vw;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    position: relative;
+    margin-top: 0;
+
+    @media (min-width: 800px) {
+      font-size: 1.75rem;
+      position: relative;
+      margin-top: 0;
+    }
+  }
+
+  h2.subtitle {
+    font-size: 3vw;
+    position: relative;
+    margin-top: 5vw;
+    opacity: 0.7;
+    text-transform: uppercase;
+
+    @media (min-width: 800px) {
+      font-size: 1.1vw;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  h3 {
+    font-size: 3vw;
+    position: relative;
+    width: 85vw;
+    margin: 0;
+    
+    @media (min-width: 800px) {
+      font-size: 1.1vw;
+      position: relative;
+      width: 55vw;
+      margin: 0;
+    }
+  }
+
+  .dev-img {
+    position: relative;
+    top: 15vw;
+    -webkit-user-drag: none;
+
+    @media (min-width: 800px) {
+      position: relative;
+      width: 15vw;
+      top: 0vw;
+      left: 3.5vw;
+    }
+    top: 0vw;
+    width: 50vw;
+  }
+
+  .tile {
+    float: left;
+    width: 21vw;
+    margin-right: 1vw;
+  }
+  .tile:nth-of-type(2) {
+    width: 56vw;
+  }
+
+  @media (max-width: 800px) {
+    .tile:nth-of-type(2) {
+      margin-top: -4vw;
+    }
+  }
+
+  .tile-container {
+    position: relative;
+    left: 0vw;
+    top: -3vw;
+    width: 80vw;
+    padding: 0vw;
+    margin: 0;
+  }
+
+  .tile-container:after {
+    //position: relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tile {
+      position: relative;
+      width: 78vw;
+      padding-bottom: 4vw;
+    }
+
+    .tile-container {
+      position: relative;
+      left: 7.2vw;
+      top: 0vw;
+    } 
+  }
+
+  .socials {
+    position: relative;
+    margin-left: 3.3vw;
+    margin-top: 1vw;
+
+    @media (max-width: 800px) {
+      margin-top: 3vw;
+      margin-left: 0vw;
+    }
+
+    .social {
+      width: 1.6vw;
+      margin-right: 0.8vw;
+      transition: all 150ms ease-in-out;
+
+      @media (max-width: 800px) {
+        width: 6vw;
+        transition: all 150ms ease-in-out;
+      }
+    }
+
+    .social:hover {
+      transform: scale(1.2);
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  #about {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -70vw;
+    z-index: 12;
+  }
+}
+
+.final-section {
+  display: block;
+  width: 100vw;
+  background-color: $dark-black;
+  color: $white;
+  z-index: 10;
+  padding: 7vw;
+
+  @media (min-width: 800px) {
+    position: relative;
+    margin-top: 0;
+    padding: 3vw;
+  }
+  position: relative;
+
+
+  h2 {
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    opacity: 0.8;
+
+    @media (min-width: 800px)
+    {
+      font-size: 1.7rem;
+      position: relative;
+      margin-bottom: 0vw;
+      margin-top: 0vw;
+    }
+  }
+
+ h3 {
+    font-size: 3vw;
+    position: relative;
+    width: 78vw;
+    margin: 0;
+    opacity: 0.6  ;
+    font-weight: 300;
+    
+    @media (min-width: 800px) {
+      font-size: 0.9rem; 
+      position: relative;
+      width: 27vw;
+      margin: 0;
+      font-weight: 300;
+      margin-top: 0.2vw;
+    }
+  }
+
+  button {
+    margin-top: 3vw;
+    margin-left: 0vw;
+    margin-right: 0;
+    width: 40vw;
+    padding: 2.5vw;
+    opacity: 0.8;
+    margin-right: 5vw;
+
+    @media (min-width: 800px) {
+      width: 11vw;
+      padding: 0.7vw;
+      margin-top: 1vw;
+      margin-right: 1.5vw;
+    }
+  }
+
+  button:nth-of-type(2) {
+    margin: 0;
+  }
+
+  .tile {
+    float: left;
+    width: 40vw;
+    margin-right: 10vw;
+  }
+
+  .tile:nth-of-type(2) {
+    margin-left: 2vw;
+    margin-right: 0;
+    padding-left: 16vw;
+  }
+
+  .tile-container {
+    position: relative;
+    left: 0vw;
+    width: 100vw;
+    padding: 0vw;
+    margin: 0;
+  }
+
+.tile-container:after {
+    //position: relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tile {
+      position: relative;
+      width: 90vw;
+      padding-bottom: 4vw;
+    }
+
+    .tile-container {
+      position: relative;
+      top: 0vw;
+    } 
+
+    .tile:nth-of-type(2) {
+      margin-left: 0vw;
+      margin-right: 0;
+      padding-left: 0vw;
+    }
+  }
+}
