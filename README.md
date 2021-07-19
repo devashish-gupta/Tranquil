@@ -1,5 +1,6 @@
 # Tranquil
 Tranquil is a breathtaking Algorithmic Reverb Plugin for all the major digital audio workstations (DAWs), meticulously crafted with an architecture that is adept in building prolific soundscapes and simulating small rooms with the same fidelity. Available as a 64-bit VST3 binary for Windows and MacOSX.
+<br>
 
 !["bg"](/assets/bg.png)
 
@@ -23,7 +24,7 @@ Tranquil is a 64-bit VST3 plugin. Thus, it needs to be in a specific location wi
 * **Submerge and Sheen**: The Submerge knob does exactly what it says, it makes the reverb tails sound as if they're submerged in the depths of the ocean. It's more than just an EQ. The Sheen knob makes the reverb tails brighter and cleaner.
 
 ### *Get a License for Tranquil*
-Get a license for Tranquil **[here](https://devashish-gupta.github.io/Tranquil/)**
+Get a license for Tranquil **[here](https://devashish-gupta.github.io/Tranquil/)**.
 
 ### *Preset Installation*:
 Once you get the license for Tranquil and activate the trial version, follow the these steps for installing Tranquil presets:
