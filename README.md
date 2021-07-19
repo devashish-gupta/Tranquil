@@ -20,7 +20,7 @@ Here's an **[interactive demonstration](https://devashish-gupta.github.io/Tranqu
 
 * **Reverberation Engine**: Tranquil has a meticulously-crafted Reverb Engine, designed to have accurate responses across the entire gamut of room sizes. It is now very easy to dial-in drum-ambiences or to create dreamy and lush soundscapes for your mixes.
 
-* **Doppler Simulation Unit**: Tranquil is equipped with a powerful Doppler Effect simulation unit, which can be used to create not only crystalline, glittery reverb tails but also anharmonic Zen sounds.
+* **Doppler Simulation Unit**: Tranquil is equipped with a powerful Doppler Effect unit, which can be used to create not only crystalline, glittery reverb tails but also anharmonic Zen sounds.
 
 * **Submerge and Sheen**: The Submerge knob does exactly what it says, it makes the reverb tails sound as if they're submerged in the depths of the ocean. It's more than just an EQ. The Sheen knob makes the reverb tails brighter and cleaner.
 
