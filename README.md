@@ -16,7 +16,7 @@ Tranquil is a 64-bit VST3 plugin. Thus, it needs to be in a specific location wi
 7. Enjoy!
 
 ### *Features*:
-Here's an **[interactive demo](https://devashish-gupta.github.io/Tranquil/#features)**.
+Here's an **[interactive demonstration](https://devashish-gupta.github.io/Tranquil/#features)** with Tranquil's UI.
 
 * **Reverberation Engine**: Tranquil has a meticulously-crafted Reverb Engine, designed to have accurate responses across the entire gamut of room sizes. It is now very easy to dial-in drum-ambiences or to create dreamy and lush soundscapes for your mixes.
 
@@ -24,7 +24,7 @@ Here's an **[interactive demo](https://devashish-gupta.github.io/Tranquil/#featu
 
 * **Submerge and Sheen**: The Submerge knob does exactly what it says, it makes the reverb tails sound as if they're submerged in the depths of the ocean. It's more than just an EQ. The Sheen knob makes the reverb tails brighter and cleaner.
 
-### *Listen to Audio Examples!*:
+### *Listen to Audio Examples!*
 Tranquil sounds beautiful on almost any source audio, be it Vocals, Keys/Synths, String Sections, Guitar or even the Drums! Listen to a few audio examples **[here](https://devashish-gupta.github.io/Tranquil/#listen)**.
 
 ### *Get a License for Tranquil*:
@@ -41,7 +41,7 @@ Once you get the license for Tranquil and activate the trial version, follow the
 6.  You're good to go!
 
 ### *Got Questions?*
-Do check out the **[FAQ](https://devashish-gupta.github.io/Tranquil/)** on the Tranquil's homepage. Still got questions? Post it on the discussions tab for this repository.
+Do check out the **[FAQ Section](https://devashish-gupta.github.io/Tranquil/)** on the Tranquil's homepage. Still got questions? Post it on the discussions tab for this repository.
 
 
 
