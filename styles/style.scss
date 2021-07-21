@@ -217,7 +217,7 @@ button {
   background-color: $white;
   font-family: 'Poppins', sans-serif;
   @media (min-width: 800px) {
-    width: 7vw;
+    width: 8vw;
     font-size: 0.75rem;
     padding: 0.4vw;
     margin-right: 2vw;
@@ -991,7 +991,7 @@ button.soliddark:hover {
     .tile-container {
       position: relative;
       left: 7.2vw;
-      top: 5vw;
+      top: 2vw;
     }
  }
 
@@ -1004,41 +1004,91 @@ button.soliddark:hover {
     position: relative;
   }
 
-  .buy-button {
+  .paypal-button {
     position: relative;
-    width: 50vw;
-    left: 7.2vw;
-    top: -4vw;
-    padding: 4vw;
-    font-size: 0.9rem;
-    z-index: 5;
+    width: 45vw;
+    transition: all 100ms ease-in-out;
 
     @media (min-width: 800px) {
       position: relative;
-      width: 11vw;
-      padding: 1vw;
-      left: 3.1vw;
-      top: 25vw;
-      font-size: 0.75rem;
+      width: 12vw;
     }
   }
 
+  .paypal-button:hover {
+    opacity: 0.9;
+  }
+
+  .upi {
+    position: relative;
+    opacity: 1;
+    width: 36vw;
+    z-index: 11;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+    @media (min-width: 800px) {
+      position: relative;
+      opacity: 1;
+      width: 10vw;
+    }
+  }
+
+  .upi:hover {
+    opacity: 0.9;
+  }
 
   .paypal {
     position: relative;
-    opacity: 0.8;
+    opacity: 1;
     width: 25vw;
-    left: 10vw;
-    top: -2vw;
+    z-index: 11;
 
     @media (min-width: 800px) {
       position: relative;
       opacity: 0.8;
       width: 8vw;
-      left: 4rem;
-      top: 26vw;
     }
   }
+
+  .tile1 {
+    float: left;
+    width: 15vw;
+
+    button {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .tile-container1 {
+    position: relative;
+    left: 3vw;
+    top: 25vw;
+    padding: 0vw;
+    margin: 0;
+  }
+
+  .tile-container1:after {
+    //position: relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tile1 {
+      position: relative;
+      width: 49vw;
+      padding-bottom: 4vw;
+    }
+
+    .tile-container1 {
+      position: relative;
+      left: 7.2vw;
+      top: 0vw;
+    }
+ }
 
   h4 {
   position: relative;
@@ -1053,6 +1103,7 @@ button.soliddark:hover {
       position: relative;
       font-size: 1vw;
       font-weight: 400;
+      width: 48vw;
       left: 3vw;
       top: 10vw;
     }
