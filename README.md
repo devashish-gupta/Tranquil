@@ -5,7 +5,7 @@ Tranquil is a breathtaking Algorithmic Reverb Plugin for all the major digital a
 !["bg"](/assets/bg.png)
 
 ### *How To Download:*
-Find the releases section on right, on the [**main repository page**](https://github.com/devashish-gupta/Tranquil) for Tranquil or directly click [**here**](https://github.com/devashish-gupta/Tranquil/releases). Click on the latest release and download the ZIP file containing the VST3 plugin.
+Find the releases section on right, on the [**main repository page**](https://github.com/devashish-gupta/Tranquil) for Tranquil or directly click [**here**](https://github.com/devashish-gupta/Tranquil/releases). Go to the latest release and download the ZIP file containing the VST3 plugin. You may also download the high-dpi experimental version of Tranquil.
 
 ### *Installation*:
 Tranquil is a 64-bit VST3 plugin. Thus, it needs to be in a specific location within the system to be detected by your DAW unlike a VST2 plugins which can be detected from any sensible location within the system. Follow the steps written below for a successful installation.
