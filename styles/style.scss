@@ -217,17 +217,27 @@ button {
   background-color: $white;
   font-family: 'Poppins', sans-serif;
   @media (min-width: 800px) {
-    width: 8vw;
+    width: 8vw; //8
     font-size: 0.75rem;
     padding: 0.4vw;
     margin-right: 2vw;
   }
   width: 28.8vw;
   margin-right: 4vw;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
   color: $black;
+}
+
+button:nth-of-type(3) {
+  width: 10vw;
+  margin-left: 11vw;
+
+  @media (max-width: 800px) {
+    margin-left: 0vw;
+    width: 50%;
+  }
 }
 
 button.hollow {

@@ -252,7 +252,7 @@ button {
   font-family: 'Poppins', sans-serif;
   width: 28.8vw;
   margin-right: 4vw;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
   color: #313131;
@@ -264,6 +264,18 @@ button {
     font-size: 0.75rem;
     padding: 0.4vw;
     margin-right: 2vw;
+  }
+}
+
+button:nth-of-type(3) {
+  width: 10vw;
+  margin-left: 11vw;
+}
+
+@media (max-width: 800px) {
+  button:nth-of-type(3) {
+    margin-left: 0vw;
+    width: 50%;
   }
 }
 
