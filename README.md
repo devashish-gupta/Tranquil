@@ -10,7 +10,7 @@ Find the releases section on right, on the [**main repository page**](https://gi
 ### *Installation*:
 Tranquil is a 64-bit VST3 plugin. Thus, it needs to be in a specific location within the system to be detected by your DAW unlike a VST2 plugins which can be detected from any sensible location within the system. Follow the steps written below for a successful installation.
 
-1. Download the Tranquil.vst3 file (it's actually a folder) from above.
+1. Download and extract Tranquil's RAR archive. Upon extraction you'll see the Tranquil.vst3 file (it's actually a folder).
 2. If you're on Windows, copy and paste Tranquil.vst3 into the following path: C:\Program Files\Common Files\VST3
 4. Launch the DAW of your choice and run a plugin scan.
 5. If in case the DAW fails to detect the type of the plugin (Effect/Instrument), then manually set it to 'Effect'.
