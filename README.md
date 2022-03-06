@@ -31,6 +31,7 @@ Tranquil sounds beautiful on almost any source audio, be it Vocals, Keys/Synths,
 
 ### *Get a License for Tranquil*:
 Get a license for Tranquil **[here](https://devashish-gupta.github.io/Tranquil/)**.
+
 Note: Perform a purchase only after verifying Tranquil works well on your system.
 
 ### *Preset Installation*:
