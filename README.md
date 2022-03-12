@@ -5,7 +5,9 @@ Tranquil is a breathtaking Algorithmic Reverb Plugin for all the major digital a
 !["bg"](/assets/bg.png)
 
 ### *How To Download:*
-Find the releases section on right, on the [**main repository page**](https://github.com/devashish-gupta/Tranquil) for Tranquil or directly click [**here**](https://github.com/devashish-gupta/Tranquil/releases). Go to the latest [**release**](https://github.com/devashish-gupta/Tranquil/releases/tag/v1.0) and download the RAR file containing the VST3 plugin. You may also download the high-dpi experimental version of Tranquil from [**here**](https://github.com/devashish-gupta/Tranquil/releases/tag/v1.0.1).
+Find the releases section on right, on the [**main repository page**](https://github.com/devashish-gupta/Tranquil) for Tranquil or directly click [**here**](https://github.com/devashish-gupta/Tranquil/releases). Go to the latest [**release**](https://github.com/devashish-gupta/Tranquil/releases/tag/v2.0) and download the RAR file containing the VST3 plugin. You may also download the high-dpi version of Tranquil from [**here**](https://github.com/devashish-gupta/Tranquil/releases/tag/v2.0.1).
+
+Announcement: Tranquil v2.0 has released (normal and high-dpi versions), now with improved performance, stability and significant support for Cubase, Studio One, Reaper, Ableton. Check out the update details [**here**](https://github.com/devashish-gupta/Tranquil/releases/tag/v1.0.1).
 
 ### *Installation*:
 Tranquil is a 64-bit VST3 plugin. Thus, it needs to be in a specific location within the system to be detected by your DAW unlike a VST2 plugins which can be detected from any sensible location within the system. Follow the steps written below for a successful installation.
